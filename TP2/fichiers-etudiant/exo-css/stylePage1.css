@@ -1,0 +1,125 @@
+/*Ajouter ci-dessous les règles pour body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.9em;
+  color: #4d4d4d;
+  margin: 50px;
+  background-image: url(bg-198-198.png);
+}
+h1{
+  text-decoration: underline;
+  font-variant: small-caps;
+  text-shadow: 0.1em 0.1em black;
+}
+a{
+  background-color: aqua;
+  color: white;
+  transition: all 0.2s ease;
+}
+a:visited {
+  background-color: blueviolet;
+  color: blue;
+}
+a:hover{
+  background-color: white;
+  color: blue;
+  font-size: large;
+}
+a:active {
+  background-color: white;
+  color: orangered;
+}
+/*Ajouter ci-dessous les règles pour le header */
+header, section, aside, footer {
+  padding: 10px;
+}
+header{
+  background-color: orangered;
+}
+/*Ajouter ci-dessous les règles pour la section */
+section {
+  background-color:skyblue;
+}
+section > p {
+  text-align: justify;
+}
+/*Ajouter ci-dessous les règles pour le premier aside */
+section+aside {
+  background-color: yellow;
+}
+section+aside img {
+  opacity: 60%;
+  transition: all 0.3s ease;
+}
+section+aside img:hover {
+  opacity: 100%;
+  border-radius: 50px;
+  transform: scale(1.20);
+}
+ol{
+  list-style:upper-roman;
+}
+ul {
+  list-style: none;
+}
+/*Ajouter ci-dessous les règles pour le deuxième aside */
+aside+aside {
+  background-color: pink;
+}
+aside+aside table, th, td {
+  border: 2px solid yellow;
+  border-collapse: collapse;
+}
+aside+aside th {
+  color: white;
+  background-color: green;
+}
+/*Ajouter ci-dessous les règles pour le footer */
+footer {
+  background-color: lightgreen;
+}
+footer > p {
+  font-style: italic;
+}
+/***************************/
+/*NE PAS MODIFIER*/
+/*règles de positionnement*/
+
+div {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+div > * {
+  flex: 1 100%;
+}
+
+header,
+footer,
+div > * {
+  border: 1px solid gray;
+}
+
+@media (min-width: 800px) {
+  section {
+    flex: 3 0px;
+  }
+  section + aside {
+    order: 1;
+  }
+  section {
+    order: 2;
+  }
+  aside + aside {
+    order: 3;
+  }
+}
+
+@media (min-width: 600px) {
+  section + aside {
+    flex: 1 auto;
+  }
+  aside + aside {
+    flex: 1 auto;
+  }
+}

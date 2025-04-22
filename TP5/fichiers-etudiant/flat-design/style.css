@@ -1,0 +1,29 @@
+body {
+    background-color: #343752;
+    font-family: Calibri, Arial, sans-serif;
+    color: white;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+main article {
+    border: 1px solid;
+    width: 310px;
+    height: 150px;
+    padding: 10px;
+    margin: 5px;
+}
+main article:last-child img {
+    
+}
+main article aside {
+    float: right;
+    color: white;
+    width: 80px;
+    
+}
+main article aside img,  main article aside figcaption{
+    margin-left: -30px;
+}

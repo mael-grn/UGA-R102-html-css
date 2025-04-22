@@ -1,0 +1,10 @@
+
+4.
+pour valider une page web :
+ - ouvrir la page web avec firefox
+ - aller sur https://validator.w3.org/nu/#file
+=> la page web du tp est valide (page 1)
+=> page 2 n'est pas valide
+
+ - ouvrir une page avec visual studio code : code NOM_FICHIER
+ - extension vs code pour corriger html : W3C validation

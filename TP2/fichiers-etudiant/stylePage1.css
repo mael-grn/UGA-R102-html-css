@@ -1,0 +1,54 @@
+/*Ajouter ci-dessous les règles pour body */
+
+
+
+/*Ajouter ci-dessous les règles pour le header */
+
+
+
+/*Ajouter ci-dessous les règles pour la section */
+
+
+
+/*Ajouter ci-dessous les règles pour le premier aside */
+
+
+
+/*Ajouter ci-dessous les règles pour le deuxième aside */
+
+
+
+/*Ajouter ci-dessous les règles pour le footer */
+
+
+
+
+
+/***************************/
+/*NE PAS MODIFIER*/
+/*règles de positionnement*/
+
+div {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+div > * {
+  flex: 1 100%;
+}
+
+header, footer, div > * {
+  border: 1px solid gray;
+}
+
+@media all and (min-width: 800px) {
+  section { flex: 3 0px; }
+  section+aside { order: 1; }
+  section { order: 2; }
+  aside+aside { order: 3; }
+}
+
+@media all and (min-width: 600px) {
+  section+aside { flex: 1 auto; }
+  aside+aside { flex: 1 auto; }
+}
